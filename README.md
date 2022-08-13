@@ -31,7 +31,7 @@ For instance, if you want to train poisoned I3D models by TSB method on UCF-101 
  "rgb" : true,                   "//": "train RGB model",
  "flow" : true,                  "//": "train flow Model",
  "poi_rgb" : true,               "//": "Adv would backdoor RGB model",
- "poi_flow" : true`,             "//": "Adv would backdoor flow model",
+ "poi_flow" : true,              "//": "Adv would backdoor flow model",
  "load_pretrained_model": true,  "//": "load model pretrained on Imagenet"
  }
  ```
@@ -44,29 +44,28 @@ Now you can utilize  the RGB model trained on UCF-101 , no matter if backdoored 
 
 First, please modify the directories where you prefer saving the attack samples in file  `file_path.json`:
 ```json
-{...
- # when adv=true in file `config.json` the RGB attack samples would be saved at "ucf-101_ba_test_frames-adv"
- 
+{ 
 "ucf-101_ba_test_frames-poi": "Dir path of poisoned RGB frames（only with trigger) for evaluating RGB model's ASR",  
  
 "ucf-101_ba_test_frames-adv": "Dir path of poisoned RGB frames（with trigger and adv-perturbation) for evaluating RGB model's ASR",  
   
 "ucf-101_ba_test_flows": "Dir of poisoned flow frames for evaluating Flow model's ASR",
-...
+
 }
 ```
 
 Next, please modify where the model is saved and choose whether to add adversarial perturbations to these samples or not in file `config.json`
 ```json
-{...
-"adv": true # add adversarial perturbations to attack samples or not 
+{
+"//": "add adversarial perturbations to attack samples or not ",
+"//": "When 'adv' is true in file config.json, the RGB attack samples would be saved at 'ucf-101_ba_test_frames-adv'. "
+"//": "Otherwise, these samples would be saved at 'ucf-101_ba_test_frames-poi'",
+
+"adv": true,
 "ucf-101-rgb-model":"Dir of RGB model trained on UCF-101",  
 "ucf-101-flow-model":"Dir of flow model trained on UCF-101",
-...
 }
 
- When 'adv' is true in file `config.json`, the RGB attack samples would be saved at "ucf-101_ba_test_frames-adv". 
- Otherwise, these samples would be saved at "ucf-101_ba_test_frames-poi" .
 ```
 Run (Skippable) 
 `cd backdoor_attack`
