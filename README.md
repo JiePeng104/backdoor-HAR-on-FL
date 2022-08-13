@@ -22,7 +22,7 @@ Some optional parameters and models' paths for FL can be set in file `config.jso
 After  getting UCF-101 and HMDB-51 two datasets, you need to modify their directories  on your system correctly in file `file_path.json`
 
 ## Running the code
-#### Step 1 (Skippable) -> Train backdoored models on FL
+### Step 1 (Skippable) -> Train backdoored models on FL
 For instance, if you want to train poisoned I3D models by TSB method on UCF-101 dataset, you need to modify 
 ```json
 {
@@ -39,7 +39,7 @@ For instance, if you want to train poisoned I3D models by TSB method on UCF-101 
 
 Run `python main.py` to train the I3D models which would be saved in folder `FL_Model`.
 
-#### Step 2  -> Generate attack samples
+### Step 2  -> Generate attack samples
 Now you can utilize  the RGB model trained on UCF-101 , no matter if backdoored or not,   to generate attack samples.
 
 First, please modify the directories where you prefer saving the attack samples in file  `file_path.json`:
@@ -72,7 +72,7 @@ Run (Skippable)
 `python generator.py`
  to generate attack samples.
 
-#### Step 3 -> Evaluate attack effectiveness
+### Step 3 -> Evaluate attack effectiveness
 (If you have downloaded backdoored models and attack samples from our cloud drive, please follow **Step 2** to modify `file_path.json` and `config.json`)
 
 Run `python Evaluate_ASR.py` to evaluate the attack success rate (ASR) and benign accuracy (BA) on UCF-101.
