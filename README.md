@@ -26,12 +26,12 @@ After  getting UCF-101 and HMDB-51 two datasets, you need to modify their direct
 For instance, if you want to train poisoned I3D models by TSB method on UCF-101 dataset, you need to modify 
 ```json
 {
- "data_type" : "ucf-101 ", "//": "dataset's name 'ucf-101' or 'hmdb-51' ",
- "num_classes" : 101 ,  "//": "ucf-101 contains 101 classes",
- "rgb" : true,  "//": "train RGB model",
- "flow" : true,  "//": "train flow Model",
- "poi_rgb" : true,  "//": "Adv would backdoor RGB model"
- "poi_flow" : true`,   "//": "Adv would backdoor flow model"
+ "data_type" : "ucf-101 ",       "//": "dataset's name 'ucf-101' or 'hmdb-51' ",
+ "num_classes" : 101 ,           "//": "ucf-101 contains 101 classes",
+ "rgb" : true,                   "//": "train RGB model",
+ "flow" : true,                  "//": "train flow Model",
+ "poi_rgb" : true,               "//": "Adv would backdoor RGB model",
+ "poi_flow" : true`,             "//": "Adv would backdoor flow model",
  "load_pretrained_model": true,  "//": "load model pretrained on Imagenet"
  }
  ```
