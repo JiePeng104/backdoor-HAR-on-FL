@@ -6,12 +6,12 @@ Implementation of Two-stream backdoor (**TSB**) and Backdoor combined with adver
 #### Download datasets
 This code requires two datasets  [UCF-101 ](http://crcv.ucf.edu/data/UCF101.php) and [HMDB-51](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/) .  
 
- For convenience, you could download extracted frames and optical flow images from our [aliyunDrive](https://www.aliyundrive.com/drive/).
+ For convenience, you could download extracted frames and optical flow images from our [OneDrive](https://1drv.ms/u/s!AriBJVhxUh_pgRdaqG-I1DyrAcLy?e=eWP1Fl).
 
 #### Train backdoored I3D Models on FL
 Please follow **Step 1-2**  to train backdoored I3D models and generate attack samples. 
 
- Alternatively, you can get some pre-trained I3D models on two datasets and  attack samples for triggering backdoor planted in these models from our [aliyunDrive](https://www.aliyundrive.com/drive/) .
+ Alternatively, you can get some pre-trained I3D models on two datasets and  attack samples for triggering backdoor planted in these models from our [OneDrive](https://1drv.ms/u/s!AriBJVhxUh_pgRdaqG-I1DyrAcLy?e=eWP1Fl).
 
 
 #### Configuration files 
