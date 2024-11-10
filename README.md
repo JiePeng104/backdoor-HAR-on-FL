@@ -1,7 +1,11 @@
 # How to backdoor Two-Stream(I3D) Model for Action Recognition on FL ?
  
  ## Overview
-Implementation of Two-stream backdoor (**TSB**) and Backdoor combined with adversarial perturbations (**BCAP**).  
+
+This is the code for [TOMM paper](https://doi.org/10.1145/3651307) "Backdoor Two-Stream Video Models on Federated Learning" by Jing Zhao and Hongwei Yang and Hui He and Jie Peng and Weizhe Zhang and Jiangqun Ni and Arun Kumar Sangaiah and Aniello Castiglione.
+
+
+Implementation of Two-stream backdoor (**TSB**) and Backdoor combined with adversarial perturbations (**BCAP**).
 
 #### Download datasets
 This code requires two datasets  [UCF-101 ](http://crcv.ucf.edu/data/UCF101.php) and [HMDB-51](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/) .  
