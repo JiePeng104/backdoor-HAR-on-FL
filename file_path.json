@@ -1,0 +1,54 @@
+{
+  "//1" : "****************** File paths for UCF-101 ******************",
+
+  "//1.1": "************* Dir path of videos, RGB frames and optical flow *************",
+  "ucf-101": "D:\\000\\000\\pj\\data\\UCF-101",
+  "ucf-101_frames": "D:\\000\\000\\pj\\data\\UCF-101-IMG",
+  "ucf-101_flows": "D:\\000\\000\\pj\\data\\UCF-101-FLOW",
+
+  "//1.2": "************* split file path for training and evaluating model on clean data *************",
+  "ucf-101-test_split": "split_file/ucfTrainTestlist/testlist01.txt",
+  "ucf-101-train_split": "split_file/ucfTrainTestlist/trainlist01.txt",
+
+  "//1.3": "************* file path of classInd.txt *************",
+  "ucf-101-class_idx": "split_file/ucfTrainTestlist/classInd.txt",
+
+  "//1.4": "************* split file path for evaluating model on poisoned data *************",
+  "ucf-101-ba_test_split": "split_file/ucfTrainTestlist/batest01.txt",
+
+  "//1.5": " ************* Dir path of poisoned RGB frames（only with trigger) for evaluating RGB model's ASR *************",
+  "ucf-101_ba_test_frames-poi": "D:\\000\\000\\pj\\data\\UCF-101-IMG-with-trigger",
+
+  "//1.6": "************* Dir path of poisoned RGB frames（with trigger and adv-perturbation) for evaluating RGB model's ASR *************",
+  "ucf-101_ba_test_frames-adv": "D:\\000\\000\\pj\\data\\UCF-101-IMG-with-trigger-advPerturb",
+
+   "//1.7": "************* Dir path of poisoned flow frames for evaluating Flow model's ASR *************",
+  "ucf-101_ba_test_flows": "D:\\000\\000\\pj\\data\\UCF-101-FLOW-with-trigger",
+
+
+  "//2" : "****************** File paths for HMDB-51 ******************",
+
+  "//2.1": "*************  Dir path of videos, RGB frames and optical flow ************* ",
+  "hmdb-51": "D:\\000\\000\\pj\\data\\HMDB-51",
+  "hmdb-51_frames": "D:\\000\\000\\pj\\data\\HMDB-51-IMG",
+  "hmdb-51_flows": "D:\\000\\000\\pj\\data\\HMDB-51-FLOW",
+
+  "//2.2": "************* split file path for training and evaluating model on clean data *************",
+  "hmdb-51-test_split": "split_file/hmdbTrainTestlist/testlist01.txt",
+  "hmdb-51-train_split": "split_file/hmdbTrainTestlist/trainlist01.txt",
+
+  "//2.3": "************* file path of classInd.txt ************* ",
+  "hmdb-51-class_idx": "split_file/hmdbTrainTestlist/classInd.txt",
+
+  "//2.4": "************* split file path for evaluating model on poisoned data ************* ",
+  "hmdb-51-ba_test_split": "split_file/hmdbTrainTestlist/batest01.txt",
+
+  "//2.5": "************* Dir path of poisoned RGB frames（only with trigger) for evaluating RGB model's ASR ************* ",
+  "hmdb-51_ba_test_frames-poi": "D:\\000\\000\\pj\\data\\HMDB-51-IMG-with-trigger",
+
+  "//2.6": "************* Dir path of poisoned RGB frames（with trigger and adv-perturbation) for evaluating RGB model's ASR ************* ",
+  "hmdb-51_ba_test_frames-adv": "D:\\000\\000\\pj\\data\\HMDB-51-IMG-with-trigger-advPerturb",
+
+   "//2.7": "************* Dir path of poisoned flow frames for evaluating Flow model's ASR ************* ",
+  "hmdb-51_ba_test_flows": "D:\\000\\000\\pj\\data\\HMDB-51-FLOW-with-trigger"
+}

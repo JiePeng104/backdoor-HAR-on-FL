@@ -1,0 +1,53 @@
+{
+  "num_clients" : 50,
+  "data_type" : "ucf-101",
+  "num_classes" : 101,
+  "load_pretrained_model": true,
+  "global_epochs" : 400,
+  "local_epochs" : 2,
+  "adv_local_epochs": 2,
+
+  "//rgb": "train RGB model or not",
+  "rgb" : true,
+
+  "//flow": "train Flow model or not",
+  "flow" : true,
+
+  "//poi_rgb": "poison RGB model or not",
+  "poi_rgb": true,
+
+  "//poi_flow": "poison Flow model or not",
+  "poi_flow": true,
+
+  "//adv": "add adv-perturbation to attack samples or not",
+  "adv": true,
+
+  "top_k" : 5,
+  "num_selected_clients" : 10,
+  "batch_size" : 6,
+  "lr" : 0.01,
+  "decay_round" : 150,
+  "eval_round" : 20,
+  "lambda" : 0.04,
+  "num_worker" : 0,
+  "rate" : 1,
+  "eta" : 25,
+  "num_malicious_clients" : 1,
+  "poi_target" : 0,
+  "num_replace" : 1,
+  "ts_x" : 40,
+  "ts_y" : 15,
+
+  "i3d_rgb_imagenet": "./pretrained_models/rgb_imagenet.pt",
+  "i3d_flow_imagenet": "./pretrained_models/flow_imagenet.pt",
+
+  "ucf-101-rgb-model":"FL_Model/3ba_rgb_349-Aggregations_lr-0.001.pt",
+  "ucf-101-flow-model":"FL_Model/40x15_2ba_flow_399-Aggregations_lr-0.001.pt",
+
+
+  "hmdb-51-rgb-model":"FL_Model/hmdb-51-rgb_399-Aggregations_lr-0.001.pt",
+  "hmdb-51-flow-model":"FL_Model/hmdb-51-40x15_2ba_flow_349-Aggregations_lr-0.001.pt",
+
+  "fl_attack_root": "D:\\000\\000\\pj\\data\\fl_attack",
+  "pre_trained_num_classes": 400
+}
